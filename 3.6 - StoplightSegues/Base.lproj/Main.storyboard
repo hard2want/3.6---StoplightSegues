@@ -25,6 +25,13 @@
                                     <segue destination="Jcx-pP-ng5" kind="show" id="UE3-wq-GXL"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BoQ-Zt-dgR">
+                                <rect key="frame" x="139" y="260" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -36,6 +43,9 @@
                     <navigationItem key="navigationItem" title="Red" id="Fqh-jW-PnI">
                         <barButtonItem key="backBarButtonItem" title="Go to Red" id="hH1-fe-aas"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textField" destination="BoQ-Zt-dgR" id="bsj-Rb-gi5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
