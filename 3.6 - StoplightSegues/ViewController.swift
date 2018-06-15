@@ -10,7 +10,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
-        
+    @IBOutlet weak var segueSwitch: UISwitch!
+    
+    @IBAction func yellowButtonTapped(_ sender: Any) {
+        if segueSwitch.isOn {
+            performSegue(withIdentifier: "Yellow", sender: nil)
+        } // end if
+    } // end yellowButtonTapped()
+    
+    @IBAction func greenButtonTapped(_ sender: Any) {
+        if segueSwitch.isOn{
+            performSegue(withIdentifier: "Green", sender: nil)
+        } // end if
+    } // end greenButtonTapped()
+
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
